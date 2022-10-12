@@ -1,28 +1,29 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import QuestionDetails from './QuestionDetails';
+import QuestionDetails from '../Homes/QuestionDetails/QuestionDetails';
 
 
 
 const Questions = () => {
-    const questions = useLoaderData();
-   const {id, question} = questions;
-     console.log(questions)
+    const questionData = useLoaderData().data;
+    const {id, questions, name} = questionData;
+    console.log(questionData)
     return (
         <div>
-            <h2>questions :{questions.data.length} </h2>
-            <h2>{id}</h2>
-            <h3>{question}</h3>            
-           
+            
+            <div>
+            <h1 className="text-center font-semibold text-4xl mt-3 mb-10">
+                Quiz of: {name}
+            </h1>
+            <div>
+                {questions.map((quizzesData,index) => (
+                    <QuestionDetails quizzesData={quizzesData} index={index+1} key={id}></QuestionDetails>
+                ))}
+            </div>
+        </div>
 
-            {
-             questions.map(question => <QuestionDetails
-             key={question.id}
-             question = {question}
-             ></QuestionDetails>)   
-            }
         </div>
     );
 };
 
-export default Questions;<h2>questions</h2>
+export default Questions;

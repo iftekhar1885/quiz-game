@@ -4,11 +4,8 @@ import { QuizContext, } from '../Layout/Main';
 import HomeDetails from '../Homes/HomeDetails';
 
 const Home = () => {
-  const [topic,setTopic] =useState([])
     const quizs = useContext(QuizContext)
-    const handleAddToQuestion = (quiz) =>{
-      setTopic(previous => [...previous, quiz])
-    }
+
 
     return (
         <div>
@@ -23,7 +20,7 @@ const Home = () => {
             quizs.data.map(quiz =><HomeDetails
             key={quiz.id}
             quiz={quiz}
-            handleAddToQuestion={handleAddToQuestion}
+
             ></HomeDetails>)
           }
           </div>
