@@ -5,7 +5,7 @@ import Home from "./Component/Home/Home";
 import Main from "./Component/Layout/Main";
 import Questions from "./Component/Question/Questions";
 import Statics from "./Component/Statics/Statics";
-import Topics from "./Component/Topics/Topics";
+
 
 
 

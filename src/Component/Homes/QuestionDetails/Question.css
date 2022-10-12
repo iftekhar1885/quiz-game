@@ -5,7 +5,8 @@
     margin: 10px;
     width: 50%;
     margin-left: 20px;
-    
+    box-shadow: 10px;
+      
 }
 .ques{
     display: flex;

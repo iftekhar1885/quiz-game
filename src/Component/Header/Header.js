@@ -42,24 +42,7 @@ export const Nav = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link to="/topics"
-                aria-label="Our product"
-                title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Topics
-              </Link>
-            </li>
-            <li>
-              <Link to="/questions"
-                aria-label="Our product"
-                title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Questions
-              </Link>
-            </li>
+  
             <li>
               <Link to="/blog"
                 aria-label="Our product"
