@@ -1,13 +1,11 @@
 import React from 'react';
 import './option.css'
-const Option = ({option}) => {
-    const handleRightAnswer = option =>{
-        console.log(option)
-    }
-    console.log(option);
+const Option = ({option, handleClickAnswer}) => {
+    
+    // console.log(option);
     return (
     <div className='options'>
-       <input onClick={handleRightAnswer(option)}
+       <input onClick={() => handleClickAnswer(option)}
         type="radio"
         id={option}
         name="fav_language"
