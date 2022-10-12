@@ -14,7 +14,7 @@ const Home = () => {
         <div>
           <div className='text-4xl  bg-slate-100 m-10 p-10'>
           <h2 className='text-4xl font-bold text-center'>Total Quiz: {quizs.data.length}</h2>
-            <h2 className='text-2xl'>Test your trivia knowledge by answering 50 of our best online general knowledge quiz questions and answers. How many can you get right?</h2>
+            <h2 className='text-2xl font-bold m-10'>Test your trivia knowledge by answering 50 of our best online general knowledge quiz questions and answers. How many can you get right?</h2>
 
 
           </div>
